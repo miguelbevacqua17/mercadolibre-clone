@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/21a5d2d8cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="main-header">
+    <div class="main-header-top-bar">
+        <img src="/img/logo-mercado-liebre.png" class="logo"/>
+        <div class="searchbar">
+            <form action="/search' method="GET" class="search-form">
+                <input type="text" class="search" placeholder="Buscar productos, marcas y más...">
+                <button class="search-button" type="submit"><i class="fas fa-search"></i></button>
+                </input>
+            </form>
+        </div>
+        <h2 class="copy-header">
+            <i class="fas fa-hand-holding-usd"></i>
+            Comprá en cuotas y sin tarjeta de crédito
+        </h2>
+    </div>
+
+    <a href="#" class="hamburger-button">
+        <i class="fas fa-bars"></i>
+    </a>
+
+    <nav class="main-navbar">
+        <ul class="left-navbar">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+
+        <ul class="right-navbar">
+            <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+            <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href="#">Tus compras <i class="fas fa-shopping-basket"></i></a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<main>
+    <div class ="main-main">
+
+        <form action="/registrarse" method="POST" class="create-form">
+
+            <div class="formulario">
+                <input type="text" name="nombre" class="form" placeholder="Nombre y apelllido">
+            </div>
+        
+            <div class="formulario">
+                <input type="text" name="usuario" class="form" placeholder="Nombre de usuario">
+            </div>
+
+            <div class="formulario">
+                <input type="email" name="email" class="form" placeholder="E-mail">
+            </div>
+
+            <div class="formulario">
+                <label>Fecha de nacimiento</label>
+                    <input type="date" name="nacimiento" class="form" placeholder="mm/dd/yyyy">
+                </div>
+
+            <div class="formulario">
+                <input type="text" name="domicilio" class="form" placeholder="Domicilio">
+            </div>
+
+            <div class="formulario">
+                <label>Perfil del usuario</label>
+            </div>
+         
+            <div class="cont-form">
+                <div class="radio-form">
+                <input type="radio" id="comprador" name="comprador" class="radio">
+                    <label for="comprador">Comprador</label>
+                <input type="radio" id="vendedor" name="vendedor" class="radio">
+                    <label for="vendedor">Vendedor</label>
+                </div>
+            </div>
+    
+            <div class="formulario1">
+                <label>Intereses</label>
+            </div>
+               
+            <div class="cont-form">
+                <div class="check-form">
+                <input type="checkbox" id="electro" name="electro" class="check">
+                    <label for="electro">Electro</label>
+                </div>
+                <div class="check-form">
+                <input type="checkbox" id="moda" name="moda" class="check">
+                    <label for="moda">Moda</label>
+                </div>
+                <div class="check-form">
+               <input type="checkbox" id="hogar" name="hogar" class="check">
+                    <label for="hogar">Hogar</label>
+                </div>
+                <div class="check-form">
+                <input type="checkbox" id="jugueteria" name="jugueteria" class="check">
+                    <label for="jugueteria">Juguetería</label>
+                </div>
+                <div class="check-form">
+                <input type="checkbox" id="vida-sana" name="vida-sana" class="check">
+                    <label for="vida-sana">Vida sana</label>
+                </div>
+            </div>
+            
+
+        </form>
+    </div>
+</main>
+
+<footer>
+        
+    <div class="main-footer">
+            <div class="segmento">
+            <i class="fas fa-credit-card fa-3x"></i>
+            <h2 class="subtitulo">Pagá con tarjeta o efectivo</h2>
+            <p class="texto"> Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+            </p>
+        </div>
+
+        <div class="segmento">
+            <i class="fas fa-gift fa-3x"></i>
+            <h2 class="subtitulo">Envío gratis desde $2.500</h2>
+            <p class="texto">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.
+            </p>
+        </div>
+
+        <div class="segmento">
+            <i class="fas fa-shield-alt fa-3x"></i>
+            <h2 class="subtitulo">Seguridad, de principio a fin</h2>
+            <p class="texto">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.
+            </p>
+        </div>
+    </div>
+
+    <div class="sub-footer">
+        <div class="copyright">
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </div> 
+    </div>
+
+</footer>
+
+
+</body>
+</html>
+
+<!--
+     <form action="/crear-producto" method="POST" class="create-form">
+        <div class="control-formulario">
+        <label>Nombre del producto:</label>
+            <input type="text" name="nombre" class="control">
+        </div>
+        <div class="control-formulario"> 
+            <label>Precio:</label>
+            <input type="text" name="precio" placeholder="$$$" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Categoría</label>
+            <select name="categoria" class="control">
+                <option value="hogar">Hogar</option>
+                <option value="electro">Electro</option>
+                <option value="indumentaria">Indumentaria</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label>Ciudad:</label>
+            <select name="ciudad" class="control">
+                <option value="caba">CABA</option>
+                <option value="cordoba">Córdoba</option>
+                <option value="rosario">Rosario</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label>Descripción del producto:</label>
+            <textarea name="descripcion" class="control" placeholder="Descrbí tu producto..."></textarea>
+        </div>
+        <div class="control-formulario">
+            <label>¿Está en oferta?</label>
+            <input type="radio" name="oferta">
+        </div>
+
+        <button type="reset" class="button-form">Borrar</button>
+        <button type="submit" class="button-form">Guardar</button>
+    </form>
+
+-->
